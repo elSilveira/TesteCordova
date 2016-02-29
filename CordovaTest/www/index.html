@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="content_security_policy":"script-src 'self' https://example.com; object-src 'self'" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <title>CordovaTest</title>
+
+    <!-- CordovaTest references -->
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/rating.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <header id="dataHeader" style="text-align: center;">
+        <h3 style="color: red; opacity: 0.7">Clique no botão + para adicionar.</h3></header>
+    <section id="dataSite" style="margin-top: 5px; margin-bottom: 40px;">
+    </section>
+   <footer style=" position:fixed; bottom: 0; background-color: white; text-align: center; width: 100%; padding-bottom: 5px; border-top: solid thin black;" >
+       <img src="images/reload-icon.png" style="width: 28px; cursor: pointer;" onclick="ListDBValues()" alt="Reload"/>
+       <!-- ADDBUTTON é somente para pegar as imagens 'pré-salvas' no projeto e salvar no SQLite -->
+       <img id="addButton" src="images/plusico.png" style="padding: 10px 0 10px 0; margin-left: 20px; width: 25px; cursor: pointer;" onclick="AddCard()" alt="Add Card"/>
+   </footer>
+        </body>
+</html>
